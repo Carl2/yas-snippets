@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: zenuity params
+# key: zparam
+# group: zen
+# --
+
+/// \params[${1:$$(yas-choose-value '("in" "inout"))}] $0

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: msm internal transition table
+# key: msmInternal
+# group: col
+# --
+struct internal_transition_table : mpl::vector<
+$0
+> {}; 

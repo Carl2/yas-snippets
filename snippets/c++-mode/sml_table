@@ -1,0 +1,25 @@
+# -*- mode: snippet -*-
+# name: sml table
+# key: sml_table
+# group: col
+# --
+
+
+#include "boost/sml.hpp"
+#include <string_view>
+//#include "fmt/format.h"
+
+namespace sml = boost::sml;
+
+struct $1
+{
+    auto operator()() const
+    {
+        using namespace sml;
+        // clang-format off
+        return make_transition_table(
+            *"init" + $0
+        );
+        // clang-format on
+    }
+};

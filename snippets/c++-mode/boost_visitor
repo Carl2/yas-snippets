@@ -1,0 +1,61 @@
+# -*- mode: snippet -*-
+# name: boost visitor
+# key: boost_visitor
+# group: col
+# --
+
+
+// Define helper classes and function
+template <typename ReturnT, typename... Lambdas>
+struct lambda_visitor;
+ 
+template <typename ReturnT, typename L1, typename... Lambdas>
+struct lambda_visitor< ReturnT, L1 , Lambdas...> : public L1, public lambda_visitor<ReturnT, Lambdas...>
+{
+    using L1::operator();
+    using lambda_visitor< ReturnT , Lambdas...>::operator();
+    lambda_visitor(L1 l1, Lambdas... lambdas) 
+      : L1(l1), lambda_visitor< ReturnT , Lambdas...> (lambdas...)
+    {}
+};
+ 
+template <typename ReturnT, typename L1>
+struct lambda_visitor<ReturnT, L1> : public L1, public boost::static_visitor<ReturnT>
+{
+    using L1::operator();
+    lambda_visitor(L1 l1) 
+      :  L1(l1), boost::static_visitor<ReturnT>()
+    {}
+};
+ 
+template <typename ReturnT>
+struct lambda_visitor<ReturnT> : public boost::static_visitor<ReturnT> 
+{
+ 
+    lambda_visitor() : boost::static_visitor<ReturnT>() {}
+};
+ 
+template <typename ReturnT, typename... Lambdas>
+lambda_visitor<ReturnT, Lambdas...> make_lambda_visitor(Lambdas... lambdas)
+{
+    return { lambdas... };
+}
+
+
+  /// Now we can use lambdas directly
+  //auto val = boost::variant<std::string, int>("Test");
+  std::array< boost::variant<double,int, std::string>,3> a{3.2,2,std::string{"Hello"}};
+auto visitor = make_lambda_visitor<void>(
+		[](const std::string & str) { std::cout << str << '\n'; },
+                [](const int& sec) { std::cout << sec << '\n'; },
+		[](const double& d) { std::cout << d << '\n'; }
+					 );
+
+
+
+  
+  std::for_each(a.begin(), a.end(),[&visitor](const auto &v) 
+		{
+		  boost::apply_visitor(visitor,v);
+		}
+		);

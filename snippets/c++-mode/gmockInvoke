@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: gmock invoke
+# key: gmockInvoke
+# group: col
+# --
+
+.WillOnce(::testing::Invoke(
+[](${1:Unused})
+{
+$0
+return ${2:MockRetType}
+}
+));

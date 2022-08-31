@@ -1,0 +1,71 @@
+# -*- mode: snippet -*-
+# name: Output iterator
+# key: out_iter
+# group: col
+# --
+
+/////////////////////////////////////////////////////////////////////////////
+// Output Iterator class
+/////////////////////////////////////////////////////////////////////////////
+template<typename ${2:Iterator}, typename ${3:TransformFunction}>
+class $1
+{
+ public:
+  using iterator_category = std::output_iterator_tag;
+  
+  explicit $1($2 iter, $3 func):
+      iter_(iter),
+      func_(func)
+  {}
+  $1& operator++(){ ++iter_;return *this;}
+  $1& operator++(int){++*this;return *this;}
+  $1& operator*(){return *this;}
+
+  
+  template<typename T>
+  $1& operator=(T const& rhs){
+    *iter_ = func_(rhs);
+    return *this;
+  }
+
+ private:
+  $2 iter_;
+  $3 func_;
+};$0
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Transformer
+// Can be used in c++17 e.g
+// auto const bigint_converter = $4(converter_func)
+/////////////////////////////////////////////////////////////////////////////
+template<typename $3>
+class ${4:output_transformer}
+{
+ public:
+  explicit $4($3 func):func_(func)
+  {}
+
+
+  template<typename $2>
+  $1<$2, $3> operator()($2 iterator) const
+  {
+    return $1<$2, $3>(iterator, func_);
+  }
+  
+ private:
+  $3 func_;
+};
+
+/////////////////////////////////////////////////////////////////////////////
+// Helper function
+// c++14
+// auto const coverter = $5( converter_func )
+/////////////////////////////////////////////////////////////////////////////
+
+template<typename $3>
+$4<$3> ${5:make_output_transformer}($3 transformFunction)
+{
+    return $4<$3>(transformFunction);
+}

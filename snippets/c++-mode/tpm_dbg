@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: tpm debug message
+# key: tpm_dbg
+# group: col
+# --
+
+#ifdef ${1:TPM_DEBUG}
+log_.debug("%s", fmt::format("$0").c_str() );
+#endif

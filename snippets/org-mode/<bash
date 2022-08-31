@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: bash
+# key: <bash
+# group: col
+# --
+
+#+HEADER: :eval never-export  :results output :wrap example :exports ${2::$$(yas-choose-value '("both" "code" "results" "none"))}
+#+begin_src bash :dir "${1:/sudo::/tmp}"
+$0
+#+end_src

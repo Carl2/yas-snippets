@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: evaluate and query for code block
+# key: src-blk-eval
+# group: col
+# --
+
+
+#+HEADER: :eval ${1:$$(yas-choose-value '("no" "query" "no-export" "query-export"))} :cache ${2:$$(yas-choose-value '("yes" "no"))}

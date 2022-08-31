@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: constexpr static
+# key: cstatic
+# group: col
+# --
+constexpr static ${1:uint8_t} $2 = $0;

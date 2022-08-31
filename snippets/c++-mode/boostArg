@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: boostArg
+# key: boostArg
+# group: boost
+# --
+
+namespace po = boost::program_options;
+
+po::options_description ${1:desc}("$2");
+
+$1.add_options()
+    ("help", "${3:Help message}")
+    ("${4:argument,s}", po::value< ${5:$$(yas-choose-value '("int" "std::string" "float" "uint8_t" "char" "std::vector< type >"))} >(), "${7:Description}")
+    ${0:()}
+    ;
+
+  po::variables_map ${8:vm};
+  po::store(po::parse_command_line(${9:argc}, ${10:argv}, $1), $8);
+  po::notify($8);
+  

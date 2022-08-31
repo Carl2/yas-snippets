@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: var
+# key: v
+# group: col
+# --
+
+\${$0}

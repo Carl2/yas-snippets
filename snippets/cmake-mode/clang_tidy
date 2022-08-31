@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Adds clang tidy
+# key: clang_tidy
+# group: col
+# --
+set( CMAKE_CXX_CLANG_TIDY "clang-tidy;checks=-*,clang-analyzer-*,readability-*")

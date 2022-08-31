@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: Zenuity bazel
+# key: BazZenLib
+# group: zen
+# --
+
+load("//support/bazel/rule/cc:rules.bzl", "z_cc_library")
+
+
+z_cc_library(
+name = "${1:name}",
+srcs = ["${2:my_file.cpp}$0"],
+hdrs = ["${3:my_hdr.h}"],
+features = ["c++14"],
+linkstatic = True,
+strip_include_prefix = "${4:include}",
+visibility = ["//visibility:${5:$$(yas-choose-value '("public" "private"))}"],
+deps = ["//vision/vision_infrastructure/libs/common"]
+)

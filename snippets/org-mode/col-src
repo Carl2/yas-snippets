@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: col source doc 
+# key: col-src
+# group: col
+# --
+
+#+NAME: ${1:name-src}
+#+HEADER: :results ${2:output$(yas-choose-value '("output" "value" ))} ${3:$$(yas-choose-value '("table" "list" "verbatim" "file"))} ${4:$$(yas-choose-value '("drawer" "code" "html" "latex" "link" "org" "pp" "raw"))}
+${5:#+HEADER: :wrap example}
+#+HEADER: :exports ${6:$$(yas-choose-value '("code" "results" "both" "none"))}
+${7:#+HEADER: :var} 
+#+begin_src $8 :dir ${9:/tmp}
+ $0
+#+end_src

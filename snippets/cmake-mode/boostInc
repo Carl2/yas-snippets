@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: boost include
+# key: boostInc
+# group: col
+# --
+
+\${Boost_INCLUDE_DIR}

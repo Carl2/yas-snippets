@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: speed log clone
+# key: spdlogclone
+# group: spdlog
+# --
+
+std::shared_ptr<spdlog::logger> ${1:log_}{ spdlog::get("${2:console}")->clone("${3:mymodule}") };$0

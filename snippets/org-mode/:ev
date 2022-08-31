@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Eval org-mode source code
+# key: :ev
+# group: col
+# --
+:eval ${1:$$(yas-choose-value '("never" "query" "never-export" "query-export"))} $0

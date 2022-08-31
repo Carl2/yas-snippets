@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: New line
+# key: newl
+# group: col
+# --
+'\n'

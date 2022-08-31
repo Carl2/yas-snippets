@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: mode cpp
+# key: modecpphdr
+# group: col
+# --
+//  -*- mode: c++ -*-

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Doxygen Class 
+# key: classDoc
+# group: col
+# --
+/**
+* \class $1
+* \brief $2
+*
+* $0
+*/

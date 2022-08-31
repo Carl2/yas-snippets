@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: inserts std::forward
+# key: fwd
+# group: col
+# --
+std::forward<$1>($2)

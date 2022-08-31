@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: speed log error
+# key: spdlogerr
+# group: spdlog
+# --
+
+auto $1 = spdlog::stderr_color_mt("${1:stderr}");$0

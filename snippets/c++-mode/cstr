@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: c_str
+# key: cstr
+# group: col
+# --
+c_str()

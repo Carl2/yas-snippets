@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cpp flag sbe
+# key: <sbe
+# group: col
+# --
+
+:flags (org-sbe "${1:fmt_sml.org:conan_install}" )
+$0

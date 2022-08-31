@@ -1,0 +1,28 @@
+# -*- mode: snippet -*-
+# name: publish org
+# key: pub-org-html
+# group: col
+# --
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/htmlize.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../css/readtheorg.css"/>
+
+#+HTML_HEAD: <script src="../css/jquery.min.js"></script>
+#+HTML_HEAD: <script src="../css/bootstrap.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../css/jquery.stickytableheaders.min.js"></script>
+#+HTML_HEAD: <script type="text/javascript" src="../css/readtheorg.js"></script>
+
+#+DATE: $0
+#+OPTIONS: toc:2 num:nil todo:nil pri:nil tags:nil ^:nil 
+#+CATEGORY: ${2:category} 
+#+TAGS: $2,$3  
+#+DESCRIPTION: $4 
+#+TITLE: ${5:TITLE}
+#+html_link_home: ../index.html
+#+html_link_up: ../index.html
+#+options: html-link-use-abs-url:nil html-postamble:auto
+#+options: html-preamble:t html-scripts:t html-style:t
+#+options: html5-fancy:nil tex:t
+#+html_doctype: xhtml-strict
+#+html_container: div
+#+AUTHOR: ${6:Calle Olsen}

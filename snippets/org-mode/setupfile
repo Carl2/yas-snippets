@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: org-setupfile
+# key: setupfile
+# group: col
+# --
+
+
+#+SETUPFILE: https://raw.githubusercontent.com/fniessen/org-html-themes/master/setup/theme-readtheorg.setup

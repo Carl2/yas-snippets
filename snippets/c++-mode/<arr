@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: std array
+# key: <arr
+# group: col
+# --
+std::array< ${1:uint8_t}, $2> ${3:arr};$0

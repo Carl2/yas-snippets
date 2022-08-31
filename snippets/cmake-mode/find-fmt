@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: find-fmt
+# key: find-fmt
+# group: col
+# --
+find_package(fmt REQUIRED)
+target_link_libraries(....  fmt::fmt-header-only)

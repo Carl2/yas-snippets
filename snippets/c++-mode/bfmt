@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: boost format
+# key: bfmt
+# group: boost
+# --
+
+${1:$$(yas-choose-value '("const auto" "auto" "boost::format"))} $2 = boost::format("$0${3:%|1$+5|}") % $4;

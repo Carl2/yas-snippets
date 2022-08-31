@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: clang format
+# key: clfmt
+# group: col
+# --
+// clang-format ${1:$$(yas-choose-value '("off" "on"))}

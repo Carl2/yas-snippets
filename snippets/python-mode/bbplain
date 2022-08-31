@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bitbake plain
+# key: bbplain
+# group: bitbake
+# --
+
+bb.plain("$0".format($1))

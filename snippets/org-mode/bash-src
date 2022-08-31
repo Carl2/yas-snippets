@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: org bash hdr
+# key: bash-src
+# group: col
+# --
+
+#+HEADER: :eval never-export :results output verbatim  :wrap example :exports both
+#+begin_src bash
+
+#+end_src

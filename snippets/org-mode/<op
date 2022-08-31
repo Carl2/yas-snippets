@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-property
+# key: <op
+# group: col
+# --
+
+(org-entry-get nil "$1" t)

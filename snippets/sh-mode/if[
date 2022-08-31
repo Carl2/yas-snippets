@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: if with [[]]
+# key: ifz
+# group: col
+# --
+
+${6:
+# -z file exists
+# -n true if length if string is non-zero
+# -f true if file exists, and is regular file
+# -a true if file exists
+# -d if file is a directory
+# =* String comparisons
+# -** numerical comparisons }
+if [[ ${1:$$(yas-choose-value '("-z" "-n" "-f" "-a" "-d" "=~" "==" "!=" "-eq" "-ne" "-lt" "-le" "-ge"))} $2 ]]; then
+  $3
+${4:else
+  $5}
+fi
+$0

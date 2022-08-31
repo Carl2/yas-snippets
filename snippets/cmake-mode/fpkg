@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: findPkg include
+# key: fpkg
+# group: col
+# --
+
+${1:include(FindPkgConfig)}
+${0:#CMAKE_PREFIX_PATH, CMAKE_FRAMEWORK_PATH, and CMAKE_APPBUNDLE_PATH cache and environment variables will be added to the pkg-config search path.}
+pkg_check_modules(${2:FOO} ${3:IMPORTED_TARGET} ${4:GLOBAL} ${5:libsystemd}${6:>=236})

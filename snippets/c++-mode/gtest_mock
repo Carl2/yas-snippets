@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: gtest mock
+# key: gtest_mock
+# group: gtest_mock
+# --
+class $1 : public $2
+{
+public:
+MOCK_METHOD${3:$$(yas-choose-value '("1" "2" "3" "4" ))}(${4:MethodName},${5:ReturnType}(${6:arguments}));
+$0
+};

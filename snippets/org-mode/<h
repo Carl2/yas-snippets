@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: header of src block
+# key: <h
+# group: col
+# --
+#+HEADER: $0

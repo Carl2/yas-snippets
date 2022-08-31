@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: threads
+# key: threads
+# group: col
+# --
+find_package(Threads)
+#Link with this ${CMAKE_THREAD_LIBS_INIT}

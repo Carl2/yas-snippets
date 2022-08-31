@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Lamda creation for c++
+# key: lamda
+# group: col
+# --
+[${1:this}]($2) ${3:->${4: auto}}
+{
+    $0
+    return {};
+}${5:;}

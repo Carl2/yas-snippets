@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: speed log console
+# key: spdlogcon
+# group: spdlog
+# --
+
+auto $1 = spdlog::stdout_color_mt("${1:console}");$0

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: raw string
+# key: rawStr
+# group: col
+# --
+
+${1:$$(yas-choose-value '("auto" "const char*" "std::string"))} $2 = R"$3(
+ $0
+)$3";

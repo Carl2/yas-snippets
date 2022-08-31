@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cpp header org mode
+# key: cpp-hdr
+# group: col
+# --
+#+HEADER: :includes <$1>  ${2::libs -l} :main ${3:$$(yas-choose-value '("no" "yes"))} :flags -std=c++${4:$$(yas-choose-value '("11" "14" "17" "20"))} -Wall -Wextra
+#+HEADER: :results table :exports both

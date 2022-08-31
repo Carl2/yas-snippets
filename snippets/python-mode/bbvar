@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: getVar
+# key: bbvar
+# group: bitbake
+# --
+${1:$(downcase yas-text)} = d.getVar("${1:VAR}",True) or ""

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: name in org mode
+# key: <nm
+# group: col
+# --
+
+#+NAME: $0

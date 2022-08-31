@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fmt print
+# key: fmtp
+# group: col
+# --
+fmt::print("$1"${2:,}$3);$0

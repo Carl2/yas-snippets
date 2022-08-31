@@ -1,0 +1,23 @@
+# -*- mode: snippet -*-
+# name: Lyra parser
+# key: lyra_parse
+# group: lyra
+# --
+bool ${1:show_help};
+auto cli = lyra::cli_parser();
+cli |= lyra::help($1);
+
+auto result = cli.parse( { argc, argv } );
+if( !result )
+{
+ 
+}
+
+
+if( $1 )
+{
+    std::stringstream ss;
+    ss << cli;
+    fmt::print("{}",ss.str());
+    exit(0);
+}

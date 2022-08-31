@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: gtest
+# key: new_gtest
+# group: col
+# --
+
+TEST${1:_F}($2, $0)
+{
+    $0
+}

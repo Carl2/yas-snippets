@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: attribute specifier
+# key: <attr
+# --
+[[${1:$$(yas-choose-value '("maybe_unused" "nodiscard" "unlikely" "likely" "fallthrough" "deprecated"))}]]$0

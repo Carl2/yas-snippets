@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: cpp src header
+# key: <cpp
+# group: col
+# --
+
+#+HEADER: :includes <$1>  :libs -l$2 :main ${3:$$(yas-choose-value '("no" "yes"))} :flags -std=${4:$$(yas-choose-value '("-std=c++17" "-std=c++20"))}
+#+HEADER: :results table :exports both

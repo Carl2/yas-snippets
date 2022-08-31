@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Lyra Options
+# key: lyra_opt
+# group: lyra
+# --
+
+cli |= lyra::opt( ${2:variable}, "${3:name}") ["-${4:short_name}"] ["--${5:long_name}"] ("${6:help}")${7:$$(yas-choose-value '(".required()" ".optional()" ""))};

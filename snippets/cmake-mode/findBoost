@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: find Boost
+# key: findBoost
+# group: col
+# --
+
+find_package( Boost  COMPONENTS ${1:system} $0 REQUIRED )

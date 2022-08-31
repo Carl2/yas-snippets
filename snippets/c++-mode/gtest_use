@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: gtest headers
+# key: gtest_use
+# group: gtest
+# --
+using ::testing::_;
+using ::testing::Return;
+using ::testing::SetArgReferee;
+using ::testing::Throw;
+using ::testing::SaveArg;
+using ::testing::StartsWith;

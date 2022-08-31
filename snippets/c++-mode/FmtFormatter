@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: Fmt
+# key: FmtFormatter
+# group: col
+# --
+template <>
+struct formatter<${1:ClassToFormat}>
+{
+template <typename ParseContext>
+constexpr auto parse(ParseContext& ctx)
+{
+return ctx.begin();
+}
+
+template <typename FormatContext>
+auto format($1 const& item, FormatContext& ctx)
+{
+ return fmt::format_to(ctx.out(), "$2", item.$0);
+}
+};

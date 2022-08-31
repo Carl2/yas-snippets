@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: zenuity comment
+# key: zco
+# group: zen
+# --
+/// \brief $1
+/// $0

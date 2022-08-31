@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Perfect constructor
+# key: perf_const
+# group: col
+# --
+
+template<typename $1, typename = std::enable_if_t<
+  		      std::is_convertible<$1,$2>::value>>
+    $3( $1&& $2):
+    $4(std::forward<$1>($2))
+  {}

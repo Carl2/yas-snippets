@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: bayanz
+# key: bayanz
+# --
+
+
+byzanz-record -d 10 -c -x 3120 -y 146 -w 1050 -h 560 record.gif

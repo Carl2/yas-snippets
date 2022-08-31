@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: state transition
+# key: trans
+# group: col
+# --
+${1: [*] } --> $2 : $0

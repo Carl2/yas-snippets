@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: cast to void
+# key: coid
+# group: col
+# --
+static_cast<void>($1);$0

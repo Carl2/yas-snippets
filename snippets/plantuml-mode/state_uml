@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: plantuml state
+# key: state_uml
+# group: col
+# --
+
+[*] --> 
+
+state "${1:state description}" as ${2:state_name} ${0:{}}

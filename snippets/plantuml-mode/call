@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: call in sequence diagram
+# key: call
+# group: col
+# --
+${1:source} -> ${2:Destination} : ${0:function}

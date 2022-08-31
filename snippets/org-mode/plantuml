@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: PlantUml in org
+# key: plantuml
+# group: col
+# --
+#+begin_src plantuml :file ${1:state.jpg}
+[*] --> init
+
+$0
+#+end_src

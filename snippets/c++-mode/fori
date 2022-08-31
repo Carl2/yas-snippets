@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: fori
+# group: col
+# key: fori
+# --
+
+for( const auto& ${1:item} : $2 )
+{
+    $0
+}

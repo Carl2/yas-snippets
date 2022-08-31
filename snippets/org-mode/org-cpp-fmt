@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: org-cpp-fmt
+# key: org-cpp-fmt
+# group: col
+# --
+
+:flags (format "%s -std=c++20 -Wall -Wextra" (org-sbe "fmt_sml.org:conan_install" ))
