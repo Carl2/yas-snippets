@@ -4,5 +4,6 @@
 # group: col
 # --
 
-#+HEADER: :includes <$1>  :libs -l$2 :main ${3:$$(yas-choose-value '("no" "yes"))} :flags -std=${4:$$(yas-choose-value '("-std=c++17" "-std=c++20"))}
-#+HEADER: :results table :exports both
+
+#+HEADER: :includes <$1>  ${2::libs -l} :main ${3:$$(yas-choose-value '("no" "yes"))} :flags (format "%s -std=c++${4:$$(yas-choose-value '("11" "14" "17" "20"))} -Wall -Wextra" (org-sbe "fmt_sml.org:conan_install" ))
+#+HEADER: :results output raw :exports results  :noweb yes :eval no-export
