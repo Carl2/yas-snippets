@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: format python
+# key: fmt
+# group: col
+# --
+
+
+.format($1)

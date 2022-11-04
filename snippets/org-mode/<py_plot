@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: py plot template
+# key: <py_plot
+# group: col
+# --
+
+
+#+NAME: py_${1:plot}
+#+HEADER: :results file :exports results :var ${2:tbl=${3:tbl_name}} file="$1.png"  :eval no-export :colnames nil
+#+begin_src python
+  import numpy as np
+  import matplotlib
+  import matplotlib.pyplot as plt
+
+
+#+end_src

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Python source
+# key: <py
+#group: col
+# --
+
+
+#+NAME: $1
+#+HEADER: :results ${2:$$(yas-choose-value '("output raw" "file"))} :exports both :var ${3:var=table}
+#+begin_src ipython
+$0
+#+end_src
