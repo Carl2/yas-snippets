@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: 2 for comprehension
+# key: <2for
+# group: col
+# --
+
+[${3:field} for ${2:row} in ${1:rows} for $3 in $2]
