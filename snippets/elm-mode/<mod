@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: exposing module
+# key: <mod
+# group: col
+# --
+module $1 exposing (${2:main})

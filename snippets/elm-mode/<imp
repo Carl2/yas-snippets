@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: import modules
+# key: <imp
+# group: col
+# --
+import ${1:Browser} ${2:as B} ${3:exposing (${4:sandbox})}

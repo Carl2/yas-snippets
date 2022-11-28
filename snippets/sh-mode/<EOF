@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: EOF
+# key: <EOF
+# group: col
+# --
+cat << $1 > $2
+
+
+$1
