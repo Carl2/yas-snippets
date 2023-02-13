@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Bit field
+# key: <bitfield
+# group: col
+# --
+${1:DataType} ${2:name}: ${3:8} {${2:$(upcase yas-text)}_DEFAULT};

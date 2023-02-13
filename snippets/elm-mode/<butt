@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Html Button
+# key: <butt
+# group: col
+# --
+button [${1:onClick ${2:Decrease}}]  [${2:text "Do"}]

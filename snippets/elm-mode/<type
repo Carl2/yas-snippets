@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
-# name: Type alias
-# key: <typea
+# name: Type
+# key: <type
+# group: col
 # --
-type alias ${1:Model} =
-${2:\{ ${3:val} : ${4:$$(yas-choose-value '("Int" "String" "Float" "Bool" ))}\} }
+type ${1:Name} = ${2:Variant1} ${4:${5:$$(yas-choose-value '("Int" "String" "Float" "Bool" ))}}
+          | ${3:Variant2} ${6:${7:$$(yas-choose-value '("Int" "String" "Float" "Bool" ))}} $0

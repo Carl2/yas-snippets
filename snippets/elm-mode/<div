@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Html div
+# key: <div
+# group: col
+# --
+div [] [$0]

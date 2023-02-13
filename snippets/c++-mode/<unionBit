@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: bit union
+# key: <unionBit
+# group: col
+# --
+
+union $1
+{
+    using DataType = ${2:uint32_t};
+    constexpr static uint8_t ${3:address}             =  $4;
+    $0
+    constexpr static auto  ${5:RegisterType}            =  RegisterOpt::${6:$$(yas-choose-value '("READ_AND_WRITE" "READ" "WRITE"))};
+
+    constexpr static DataType ${7:$(upcase yas-text)}_DEFAULT = ${10:0};
+
+    struct
+    {
+         DataType ${7:name} : ${8:8}  {${7:$(upcase yas-text)}_DEFAULT};
+
+    } fields;
+    DataType ${9:data}{};
+};
