@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Test case
+# key: <test
+# --
+test "$1" <|
+    \\_ ->
+        let
+            $0
+        in
+            $2
+                |> Expect.equal [$3]
