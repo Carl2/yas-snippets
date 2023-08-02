@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: cpp src header 23
+# key: <cpp23
+# group: col
+# --
+
+#+HEADER: :includes <$1>  :main ${2:$$(yas-choose-value '("no" "yes"))}
+#+HEADER: :flags -std=c++${5:$$(yas-choose-value '("11" "14" "17" "20" "23"))} -Wall -Wextra
+#+HEADER: :results output raw :exports ${5:$$(yas-choose-value '( "code" "result" "both" "none"))}  :noweb yes :eval no-export

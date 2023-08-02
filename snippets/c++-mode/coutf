@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# contributor: Carl Olsen (olsen.carl@gmail.com)
+# name: cout with format
+# key: coutf
+# group: col
+# --
+
+std::cout << std::format("${0:\n}");
