@@ -4,7 +4,7 @@
 # group: col
 # --
 
-#+HEADER: :includes <$1>  :main ${2:$$(yas-choose-value '("no" "yes"))}
-#+HEADER: ${3::libs (col/conan-elisp-install "${4:fmt/9.1.0}" 'libs )}
-#+HEADER: :flags (format "%s -std=c++${5:$$(yas-choose-value '("11" "14" "17" "20"))} -Wall -Wextra" (col/conan-elisp-install "${6:fmt/9.1.0}" 'include))
+#+NAME: $1
+#+HEADER: :includes <${2:format}> ${3:<iostream>} :main ${4:$$(yas-choose-value '("no" "yes"))}
+#+HEADER: :flags -std=c++${5:$$(yas-choose-value '("11" "14" "17" "20"))} -Wall -Wextra
 #+HEADER: :results output raw :exports results  :noweb yes :eval no-export
