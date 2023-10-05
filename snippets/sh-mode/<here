@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: Here doc
+# key: <here
+# group: col
+# --
+
+
+cat <<- ${1:EOF} > $2
+$0
+$1
