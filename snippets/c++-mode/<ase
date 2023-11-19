@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: Assert eq
+# key: <ase
+# group: col
+# --
+
+ASSERT_${1:$$(yas-choose-value '("EQ" "NE" "LT" "LE" "GT" "GE" ))}( $2 , $3);$0

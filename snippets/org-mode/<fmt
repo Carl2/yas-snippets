@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: std format
+# key: <fmt
+# group: col
+# --
+
+std::format("$1${2:{$3}}\n",${4:val})
