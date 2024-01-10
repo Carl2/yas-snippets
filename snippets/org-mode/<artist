@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: Artist mode for org
+# key: <artist
+# group: col
+# --
+
+#+NAME: $1
+#+begin_src artist
+
+
+$0
+
+
+
+
+
+
+
+
+
+#+end_src
