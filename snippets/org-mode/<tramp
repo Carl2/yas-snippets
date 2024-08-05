@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: tramp-ssh-sudo
+# key: <tramp
+# group: col
+# --
+
+
+/ssh:${1:calle}@${2:192.168.1.6}${3:#22}|sudo::${4:/tmp}

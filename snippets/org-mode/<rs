@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Rust source
+# key: <rs
+# group: col
+# --
+
+
+
+#+HEADER: :eval never-export  :results output ${1:$$(yas-choose-value '(":wrap example" "raw"))}  :exports both
+#+begin_src rust
+$0
+#+end_src
