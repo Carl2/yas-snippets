@@ -6,7 +6,7 @@
 
 
 #+NAME: $1
-#+HEADER: :results ${2:$$(yas-choose-value '("output raw" "file"))} :exports both :var ${3:var=table}
-#+begin_src ipython
+#+HEADER: :results ${2:$$(yas-choose-value '("output raw" "file"))} :exports both ${3::var ${4:var=table}} ${5::session $6} ${7::wrap ${8:example}}
+#+begin_src python ${9::noweb yes}
 $0
 #+end_src
