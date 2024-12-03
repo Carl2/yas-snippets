@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: print
+# key: <pri
+# group: col
+# --
+std::print("${1:{}}",$2);
