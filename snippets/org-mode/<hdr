@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: org mode header
+# key: <hdr
+# group: col
+# --
+
+
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+OPTIONS: broken-links:t
+#+AUTHOR: ${1:Calle Olsen}
+#+EMAIL: ${2: olsen.carl@gmail.com}
+#+TITLE: ${3:My title}
+#+LANGUAGE: ${5:en,sv}
+#+DATE: `(format-time-string "%Y-%m-%d")`
+#+FILETAGS: $4
+#+TODO: TODO(t) WORKING(w)|DONE(d)
+#+STARTUP: overview indent num align descriptivelinks inlineimages latexpreview
+
+* $3 Overview
+ $0

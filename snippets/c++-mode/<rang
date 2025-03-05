@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: ranges
+# key: <rang
+# group: col
+# --
+
+#include <ranges>
+
+${1:namespace rng = std::ranges;}
+${2:namespace vw = std::views;}
