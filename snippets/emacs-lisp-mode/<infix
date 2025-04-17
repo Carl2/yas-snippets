@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: transient-infix
+# key: <infix
+# group: col
+# --
+(transient-define-infix ${1:fn-name} ()
+"${2:Description}
+"
+:description "${3:short description}"
+:shortarg "${4:-q}"
+:argument "${}"
+${5::always-read ${6:t}}
+:class 'transient-option
+:choices '("Ollama" "OpenAI")
+:init-value (lambda (obj) (oset obj value "Ollama"))
+
+)

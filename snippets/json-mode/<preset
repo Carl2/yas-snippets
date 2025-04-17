@@ -1,0 +1,29 @@
+# -*- mode: snippet -*-
+# name: cmake preset json
+# key: <preset
+# group: col
+# --
+
+        {
+            "name": "${1:dev-}",
+            "displayName": "${2:$$(yas-choose-value '("Release" "Debug"))}",
+            "description": "$3",
+            "generator": "${4:$$(yas-choose-value '("Ninja" "Unix Makefiles"))}",
+            "binaryDir": "$\{sourceDir\}/build/${1}",
+            "cacheVariables": {
+                "CLANG_TIDY_ENABLE": "${5:$$(yas-choose-value '("False" "True"))}",
+                "CMAKE_BUILD_TYPE": "${6:$$(yas-choose-value '("Debug" "Release"))}",
+                ${7:"WARNINGS_AS_ERRORS": "${8:$$(yas-choose-value '("False" "True"))}",}
+                "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+            },
+            "environment": {},
+            "vendor": {
+                "example.com/ExampleIDE/1.0": {
+                    "autoFormat": true
+                },
+                "warnings": {
+                    "deprecated": true,
+                    "uninitialized": true
+                }
+            }
+        }
