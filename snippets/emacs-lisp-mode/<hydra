@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: major-mode-hydra menu
+# key: <hydra
+# group: col
+# --
+  (major-mode-hydra-define ${1:text-mode}
+    (:color ${2:$$(yas-choose-value '("red" "blue" "amaranth" "teal" "pink"))} :title "${3:My title}" :separator "${4:―}")
+    (
+    ${5:<hydra-column}$0
+     ));

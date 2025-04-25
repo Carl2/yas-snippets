@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Hydra column
+# key: <hydra-column
+# group: col
+# --
+
+   "${1:Column header}"
+     (("${2:key}" ${3:function} "${4:description}")
+      ${5:("${6:key}" ${7:function} "${8:description}")}
+      )
+      ${9:<hydra-column}$0
