@@ -6,5 +6,5 @@
 
 #+NAME: $1
 #+HEADER: :includes '("<${2:format}>" "${3:<iostream>}") :main ${4:$$(yas-choose-value '("no" "yes"))}
-#+HEADER: :flags -std=c++${5:$$(yas-choose-value '("11" "14" "17" "20"))} -Wall -Wextra
+#+HEADER: :flags -std=c++${5:$$(yas-choose-value '("11" "14" "17" "20" "23"))} -Wall -Wextra
 #+HEADER: :results output raw :exports ${6:$$(yas-choose-value '("result" "both" "code" ))}  :noweb yes :eval no-export
