@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: transient group
+# key: <group
+# group: col
+# --
+
+[${1:"${2:Groupname}"}
+    ${3:$$(yas-choose-value '(" " "<infix-inline" "<suffix-inline" "<group"))}$0]

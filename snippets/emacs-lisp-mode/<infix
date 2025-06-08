@@ -3,6 +3,7 @@
 # key: <infix
 # group: col
 # --
+
 (transient-define-infix ${1:fn-name} ()
 "${2:Description}
 "

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: transient infix binding
+# key: <suffix-inline
+# group: col
+# --
+("${1:Key}" "${2:Description}" ${3:Suffix-function})
+${4:$$(yas-choose-value '(" " "<infix-inline" "<suffix-inline" ))}$0
