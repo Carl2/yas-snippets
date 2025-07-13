@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Print format
+# key: <pf
+# group: col
+# --
+print(f"${1:{$2}}"${3:,separator="$4"}${5:,end="$6"})
