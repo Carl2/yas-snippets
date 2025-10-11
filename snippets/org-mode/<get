@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Get property value
+# key: <get
+# group: col
+# --
+(org-entry-get nil "$0" t)

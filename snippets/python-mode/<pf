@@ -3,4 +3,5 @@
 # key: <pf
 # group: col
 # --
-print(f"${1:{$2}}"${3:,separator="$4"}${5:,end="$6"})
+print(f"$7${1:{$2}}"${3:, sep="$4"}${5:, end="$6"})
+$0

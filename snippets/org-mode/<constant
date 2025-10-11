@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: constant get
+# key: <constant
+# group: col
+# --
+(org-table-get-constant "$0")

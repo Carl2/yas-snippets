@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: transient infix
+# key: <infix2
+# group: col
+# --
+
+
+(transient-define-infix ${1:infix:fn}(${2:args})
+  "${3:Description}"
+  :description "$4"
+  :shortarg "${5:-o}" ;; Single-char short key
+  :argument "${6:--option=}" ;; Full flag
+  :class ${7:$$(yas-choose-value '("'transient-switch" "'transient-option" ))} ;; Either option (value) or switch (flag)
+  ${8::prompt "$9"}
+  ${10::choices '("${11:one}" "${12:two}")}
+  ${13::always-read t}
+  ${14::init-value (lambda (obj) (progn (oset obj value "${15:default value}")))}
+  ${15::reader 'read-string}
+
+)

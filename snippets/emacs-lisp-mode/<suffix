@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: Transient suffix
+# key: <suffix
+# group: col
+# --
+(transient-define-suffix ${1:suffix-name}(${2:args})
+  "${3:Documentation string}"
+  ${4::description "${5:Description}"}
+  ${6::key "${7:A}"}                  ;; What key to execute
+  ${8:(interactive ${9:"fFile:"})
+      (let* ((args (transient-args '${10:prefix}))
+             (value (transient-arg-value "${11:--option=}" args))
+            )
+        ${12:(message "Value %s" value)}
+        ))}
+$0

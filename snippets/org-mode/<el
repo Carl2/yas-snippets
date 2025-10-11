@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: Emacs lisp block
+# key: <el
+# group: col
+# --
+
+#+begin_src emacs-lisp :lexical t
+$0
+#+end_src
