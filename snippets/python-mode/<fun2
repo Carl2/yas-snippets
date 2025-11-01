@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Function returning a function
+# key: <fun2
+# group: col
+# --
+
+
+def ${1:function}($2)->callable:
+    def do_$1($3):->Maybe
+        return ${4:Just()}
+    return do_$1
