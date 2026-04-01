@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: Pymonad import
+# key: <pymonad
+# group: col
+# --
+from pymonad.maybe import Maybe,Just$0

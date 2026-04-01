@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: nspawn
+# key: <nspawn
+# group: col
+# --
+
+#+HEADER: :eval never-export  :results output :wrap example :exports ${4::$$(yas-choose-value '("both" "code" "results" "none"))}
+#+begin_src bash :dir "${1:/nspawn:${2:archlinux}:/${3:tmp}}"
+$0
+#+end_src

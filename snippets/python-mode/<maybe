@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: maybe
+# key: <maybe
+# group: col
+# --
+Maybe(value=f"$0 {$1}", monoid=False)
